@@ -1,3 +1,5 @@
+#Gerador de dados aleatorios
+
 import random
 
 #função para gerar nomes aleatorios
