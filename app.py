@@ -27,9 +27,11 @@ with open('fones.txt','r') as arquivo:
 for telefone in telefones:
     wb.open(f'https://api.whatsapp.com/send?phone={telefone}')
     sleep(10)
+    #tira print do botao que inciar conversa que aparece no navegador e coloque dentro da pasta do projeto
     iniciar = py.locateCenterOnScreen('inciar_conversa.png',confidence=0.9)
     py.click(iniciar[0],iniciar[1])
     sleep(10)
+    #tira print do botao que redireciona você pro web wpp que aparece no navegador e coloque dentro da pasta do projeto
     web = py.locateCenterOnScreen('web.png',confidence=0.9)
     py.click(web[0],web[1])
     sleep(15)
